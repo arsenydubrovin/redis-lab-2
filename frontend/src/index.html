@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/reset-min.css" />
+    <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+
+<body>
+    <div class="main">
+        <form method="post" class="column" id="input-form">
+            <div class="wrapper">
+                <label for="athlete">Спортсмен</label>
+                <select id="athlete-select" name="athlete">
+                </select>
+            </div>
+            <div class="wrapper">
+                <label for="referee">Судья</label>
+                <select id="referee-select" name="referee">
+                </select>
+            </div>
+            <div class="wrapper">
+                <label for="score">Балл</label>
+                <input id="score-input" type="number" name="score" value="0" min="0" autofocus>
+            </div>
+
+            <div class="wrapper">
+                <input type="button" value="Добавить" id="add">
+            </div>
+        </form>
+
+        <div class="column">
+            <div class="result-table" id="result-table">
+                <div class="table-header cell">Спортсмен</div>
+                <div class="table-header cell">Баллы</div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/frontend.js"></script>
+    <script src="/static/js/backend.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script src="/static/js/helpers.js"></script>
+
+</body>
+
+</html>

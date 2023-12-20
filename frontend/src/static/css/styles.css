@@ -1,0 +1,139 @@
+div,
+form,
+p {
+	/*	 Highlight */
+	/*	background: rgb(23, 23, 223, 0.05);*/
+}
+
+/*Disable selecting and scrolling*/
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+body {
+	background: #fff;
+	font-family: "PT Root UI";
+	font-weight: 500;
+	width: 100%;
+	height: 100%;
+}
+
+
+label,
+.table-header {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+input,
+select {
+	height: 28px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-position: calc(100% - 6px) center !important;
+	background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+}
+
+input,
+select {
+	border-radius: 3px;
+	padding: 2px 6px 6px 6px;
+	border: none;
+	background-color: rgb(235, 240, 240)
+}
+
+select {
+	padding: 2px 6px 6px 6px;
+}
+
+input[type="number"] {
+	padding: 4px 6px 4px 6px;
+}
+
+input[type="button"] {
+	margin-top: 14px;
+	background-color: hsl(230, 47%, 35%);
+	color: #fff;
+}
+
+input[type="button"]:hover {
+	background-color: hsl(230, 47%, 39%);
+	color: #fafafa;
+}
+
+.main {
+	/*	width: 650px;
+	height: 430px;
+	border: #000 1px solid;
+*/
+	width: 100%;
+	height: 100%;
+	padding: 10px 3%;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	gap: 30px;
+}
+
+.column {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+
+.error {
+	color: hsl(16, 100%, 35%)
+}
+
+#user-text {
+	height: 100%;
+	line-height: 1;
+	font-weight: normal;
+
+	font-family: Helvetica;
+	font-size: 18px;
+	font-style: normal;
+	color: #000;
+}
+
+.result-table {
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	gap: 6px 10px;
+}
+
+.cell {
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+}
+
+/*.name-cell::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 60%;
+	background: linear-gradient(to right, transparent, #ffffff);
+	pointer-events: none;
+}*/

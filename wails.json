@@ -1,0 +1,10 @@
+{
+  "name": "race-monitor",
+  "outputfilename": "race-monitor",
+  "frontend:install": "",
+  "frontend:build": "",
+  "author": {
+    "name": "",
+    "email": ""
+  }
+}
